@@ -1,4 +1,5 @@
 <?php
+define('WP_CACHE', true); // WP-Optimize Cache
 /**
  * The base configuration for WordPress
  *
@@ -17,26 +18,19 @@
  *
  * @package WordPress
  */
-
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'test1' );
-
 /** Database username */
 define( 'DB_USER', 'root' );
-
 /** Database password */
 define( 'DB_PASSWORD', '' );
-
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
-
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
-
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
-
 /**#@+
  * Authentication unique keys and salts.
  *
@@ -56,9 +50,7 @@ define( 'AUTH_SALT',        'Bc2WU7p8OSuwtc[TD[@Ypz7Bu3A AR,G==WE(O%SQZx!x!i*0uO
 define( 'SECURE_AUTH_SALT', 'sJHrRC$ArlCH5vQ?V]+XDWLZ!Hw4gK Cn$N@$88Ws*9k0fdiUsig{<aUuD*3;p5]' );
 define( 'LOGGED_IN_SALT',   ' A1V93;u})>rU6MM=]/qSNZ8hT~(;V.H<Fdc[t%i~:MEt,[mc%I]U/ `yB&nmDXM' );
 define( 'NONCE_SALT',       'rT*ti{3UADxG$$Pm4/2Z<;XJ_>6Pf6mxR2+}8iIuK/cP<]Ye;[AejHG?g#~G4fwF' );
-
 /**#@-*/
-
 /**
  * WordPress database table prefix.
  *
@@ -66,7 +58,6 @@ define( 'NONCE_SALT',       'rT*ti{3UADxG$$Pm4/2Z<;XJ_>6Pf6mxR2+}8iIuK/cP<]Ye;[A
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix = 'wp_';
-
 /**
  * For developers: WordPress debugging mode.
  *
@@ -80,17 +71,11 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
-
 /* Add any custom values between this line and the "stop editing" line. */
-
-
-
 /* That's all, stop editing! Happy publishing. */
-
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
-
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
